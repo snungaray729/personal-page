@@ -7,35 +7,41 @@
     </head>
 
     <body>
-        <p id="top-bar">
-            <a href="../index.html">Home</a> /
-            <a href="../projects-page/projects.html">Projects</a> /
-            <a href="contact.html">Contact</a>
-        </p>
+        <header> Contact Me </header>
 
-        <h1 id="header">Contact Me</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects-page/projects.html">Projects</a></li>
+            <li style="float: right;"><a href="contact.html">Contact</a></li>
+        </ul>
 
         <br>
 
-        <form id="form" action="contact.js" align="center" method="GET">
+        <form id="contact-form" action="contact.js" method="GET">
 
-            <label for="fname"> First Name </label>
-            <br>
-            <input type="text" id="fname" name="fname"> 
+            <div class="contact-row">
 
-            <br>
-            <br>
+                <div class="contact left"></div>
 
-            <label for="lname"> Last Name </label>
-            <br>
-            <input type="text" id="lname" name="lname">
+                    <label for="fname"> First Name: </label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
 
-            <br>
+                </div>
+
+                <div class="contact right"></div>
+
+                    <label for="lname"> Last Name: </label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+                </div>
+                <br>
+            </div>
+
             <br>
 
             <label for="email"> E-mail: </label>
-            <br>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
 
             <br>
             <br>
@@ -47,7 +53,7 @@
             <br>
             <br>
 
-            <input type="submit" value="submit">
+            <button type="submit" name="submit">Submit</button>
 
         </form>
     </body>
