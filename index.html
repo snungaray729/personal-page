@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
     <!-- Website metadata -->
     <head>
         <!-- Website title -->
@@ -27,6 +26,9 @@
 
     <!-- Website content -->
     <body>
+        <!-- Header -->
+        <header> Home </header>
+
         <!-- Navigation Bar -->
         <ul>
             <li><a href="index.html">Home</a></li>                           
@@ -34,29 +36,93 @@
             <li style="float: right;"><a href="contact-page/contact.html">Contact</a></li>
         </ul>
 
-        <br>
+        <!-- Setup a two column webpage-->
+        <div class="content-row">
+            <!-- Website side column content -->
+            <div class="column side">
+                <br><br>
+                <!-- About me header -->
+                <div id="content-header">
+                    About Me
+                </div>
 
-        <!-- Website Header -->
-        <h1 id="header"> Home </h1>
+                <br>
 
-        <br>
+                <!-- Profile picture -->
+                <img src="Santiago_Nungaray.png" alt="profile picture">
 
-        <!-- Profile picture -->
-        <div id="profile-picture">
-            <img src="Santiago_Nungaray.png" alt="profile picture">
-            <br>
-            Santiago Nungaray
+                <br>
+
+                <!-- Short introduction of myself -->
+                <p>
+                    Hello!,
+                    <br><br>
+                    My name is Santiago Nungaray and this is my personal 
+                    website. I created this website as a fun side project,
+                    and to practice my frontend skills. Please feel free to take
+                    a look around, and please feel free to use the 'Contact Me' 
+                    page at the top right of the screen to get in contect with me.
+                </p>
+
+                <!-- Education Header -->
+                <div id="column-header">
+                    Education
+                </div>
+
+                <!-- Education Content -->
+                <p> 
+                    B.S in Computer Science - University of Las Vegas, Neavada (UNLV)
+                    Expected Dec 2027
+                    <br><br>
+                    A.A in Computer Science - College of Southern Nevada (CSN) 
+                    Graduated Spring 2026
+                    <br><br>
+                    Data Analyst - NCLab - Completed August 2025
+                </p>
+                
+                <!-- Skills Header -->
+                <div id="column-header">
+                    Skills
+                </div>
+
+                <!-- Skills Content -->
+                <p>
+                    Programming: HTML, CSS, Java, C++, Python, SQL
+                </p>
+
+                <!-- Languages Header -->
+                <div id="column-header">
+                    Languages
+                </div>
+
+                <!-- Languages Content-->
+                <p>
+                    English and Spanish (Fluent)
+                </p>
+            </div>
+
+            <!-- Website main column content -->
+            <div class="column main">
+                <br><br>
+                <div id="content-header"> 
+                    Projects 
+                </div>
+                
+                <br>
+
+                Hello! Welcome to my basic HTML website 
+                <br> Find some of my other project by clicking 
+                <a href="projects-page/projects.html">here</a>, or by finding the 
+                links at the top left of the page.
+            </div>
         </div>
 
-       <br>
-
-        <!-- Website paragraph -->
-        <p align="center"> 
-            Hello! Welcome to my basic HTML website 
-            <br> Find some of my other project by clicking 
-            <a href="projects-page/projects.html">here</a>, or by finding the 
-            links at the top left of the page.
-        </p>
+        <!-- Footer -->
+        <footer> 
+            Website created by Santiago Nungaray
+            <br>
+            <a href="contact-page/contact.html">Contact Me</a>
+        </footer>
 
     </body>
 </html>

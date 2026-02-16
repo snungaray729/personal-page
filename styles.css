@@ -1,6 +1,15 @@
-/* Entire page */
-* {
-    background-color: lightblue;
+/* Make sure header and body take up all space on screen. */
+header, body {
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 60px;
+    background-color: #00aeff;
 }
 
 /* Navigation Bar */
@@ -9,7 +18,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0011ff;
+    background-color: #000000;
 }
 
 ul li {
@@ -22,21 +31,70 @@ ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #0011ff; 
+    background-color: #000000; 
 }
 
 ul li a:hover {
     background-color: #00aeff;
 }
 
-#header {
-    text-align: center;
-    border-style: solid;
-    margin: auto;
+/* Setting up a 2-column page */
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#profile-picture {
-    text-align: center;
+.column {
+    padding: 10px;
+}
+
+.side {
+    background-color: #f1f1f1;
+    flex: 1;
+}
+
+.main {
+    flex: 3;
+}
+
+/* About me */
+#content-header {
     font-weight: bold;
-    font-size: 29px;
+    font-size: 30px;
+}
+
+#column-header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#contact-form {
+    text-align: center;
+}
+
+/* Setting up 2 column form */
+.contact-row {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.left {
+    background-color: #f1f1f1;
+    flex: 1;
+}
+
+.right {
+    background-color: #ff0000;
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #00aeff;
+    text-align: left;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
